@@ -134,8 +134,8 @@ if __name__ == '__main__':
 
     # If you want to quickly change the attack model and the number of attacks generated, you can modify the following entries
     # DataConfiguration([Attack model], [Simulation target in attack], [Test model], [Number of attacks generated], "subtask")
+    # data_config = DataConfiguration("gpt-4o", "gpt-4o-mini", "gpt-4o-mini", 1, "subtask")
     data_config = DataConfiguration("gpt-4o", "gpt-4o-mini", "gpt-4o-mini", 1, "subtask")
-
     #   Task Category [You can modify this selection to perform the task]
     #   "effect_test"       Test the actual effect of the attack
     #   "prompt_generate"   Batch generate test samples according to [Number of attacks generated]

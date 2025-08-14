@@ -10,8 +10,7 @@ from typing import Dict, List
 from fastchat.conversation import Conversation
 from openai import OpenAI
 
-from API_key import Siliconflow_BASE_URL, Siliconflow_API_KEY, Mistral_API, Mistral_BASE_URL, OPENAI_API_KEY, \
-    ALIYUN_API_KEY, ALIYUN_BASE_URL, DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL
+from API_key import Siliconflow_BASE_URL, Siliconflow_API_KEY, Mistral_API, Mistral_BASE_URL, OPENAI_API_KEY, OPENAI_API_BASE, ALIYUN_API_KEY, ALIYUN_BASE_URL, DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL
 
 
 class GPT:
@@ -23,7 +22,7 @@ class GPT:
 
     def __init__(self, model_name):
         self.model_name = model_name
-        self.client = OpenAI(api_key=OPENAI_API_KEY)
+        self.client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_API_BASE)
         self.max_tokens = 16384
 
     def generate(self, conv: Conversation,
