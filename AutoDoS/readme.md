@@ -11,8 +11,8 @@ Large Language Models (LLMs) have demonstrated remarkable performance across div
 Clone this project
 
 ```
-git clone https://github.com/shuita2333/Agent_delay_attack.git
-cd Agent_delay_attack
+git clone https://github.com/shuita2333/AutoDoS.git
+cd AutoDoS
 ```
 
 Create virtual environment
@@ -28,7 +28,7 @@ Install requirements
 pip install -r requirements.txt
 ```
 
-Create a new `API_kye.py` in the root directory
+Create a new `API_key.py` in the root directory
 
 ```
 cd Agent_delay_attack
